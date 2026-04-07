@@ -1,15 +1,13 @@
-for i in range(1, 6):
-    peso=int(input(f'Digite o peso da {i}ª pessoa:').strip())
-
-    if i == 1:
-        maior = num
-        menor = num
+maior=0
+menor=0
+for n in range (1, 6):
+    peso=float(input(f'Qual peso da {n} pessoa?'))
+    if n == 1:
+        maior=peso
+        menor=peso
     else:
-        if num > maior:
-            maior = num
-
-        if num < menor:
-            menor = num
-
-print("Maior:", maior)
-print("Menor:", menor)
+        if peso>maior:
+            maior=peso
+        if peso<menor:
+            menor=peso
+print(f'O maior peso é {maior}Kg e o menor peso é {menor}Kg')
